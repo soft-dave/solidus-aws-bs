@@ -1,0 +1,37 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  user: davejc
+  password: davejc
+
+development:
+  <<: *default
+  adapter: postgresql
+  database: dev_dave2-solidus
+  pool: 5
+  timeout: 50
+  host: localhost
+  username: davejc
+  password: davejc
+
+test:
+  <<: *default
+  adapter: postgresql
+  database: test_dave2-solidus
+  pool: 5
+  timeout: 50
+  host: localhost
+  username: davejc
+  password: davejc
+  
+# dev:
+#  adapter: postgresql
+#  encoding: unicode
+#  pool: 5
+#  url: postgres://cossetmoi:59bPb&4s@cossetmoi-stage.cskrggp9mhcl.eu-west-3.rds.amazonaws.com:5432/cossetmoi_dev
+
+production:
+  <<: *default
+  database: prod_dave2-solidus
+  username: davejc
+  password: davejc
