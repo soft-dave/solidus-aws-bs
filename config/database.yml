@@ -24,12 +24,6 @@ test:
   username: davejc
   password: davejc
   
-# dev:
-#  adapter: postgresql
-#  encoding: unicode
-#  pool: 5
-#  url: postgres://cossetmoi:59bPb&4s@cossetmoi-stage.cskrggp9mhcl.eu-west-3.rds.amazonaws.com:5432/cossetmoi_dev
-
 production:
   <<: *default
   database: prod_dave2-solidus
